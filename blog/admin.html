@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="admin.css">
+  <title>Admin Panel</title>
+</head>
+<body>
+  
+  <div id="navbar-placeholder"></div>
+
+  <div class="navbar-holder">
+    <form id="blogForm">
+      <h2>Title</h2>
+      <input type="text" id="title" placeholder="Enter the title" required>
+
+      <h2>Blog Image URL</h2>
+      <input type="url" id="image" placeholder="Enter image URL" required>
+
+      <h2>Blog Description</h2>
+      <textarea id="description" placeholder="Write..." rows="5" required></textarea>
+
+      <h2>Category</h2>
+      <select id="category" required>
+        <option value="">-- Select Category --</option>
+        <option value="Animal">Animal</option>
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Tech">Tech</option>
+      </select>
+
+      <h2>Published by</h2>
+      <input type="text" id="publisher" placeholder="Author's name" required>
+
+      <input type="hidden" id="editIndex" value="-1">
+
+      <br><br>
+      <input type="submit" value="Submit Blog">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
